@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - Project_1 - Forms</title>
+</head>
+<body>
+    <h1 style="font-family: Arial, Helvetica, sans-serif; text-align: center;">Forms</h1>
+
+    <form action="main.html" method="GET" style="font-family: Arial, Helvetica, sans-serif; margin: 2rem; border: 1px solid black;">
+        <div class="name" style="margin: 10px;">
+            <label for="name">Name</label>
+            <input type="text" placeholder="Enter your username">
+        </div>
+
+        <div class="email" style="margin: 10px;">
+            <label for="email">Email</label>
+            <input type="email" placeholder="Enter your email" required>
+        </div>
+        
+        <div class="age" style="margin: 10px;">
+            <label for="age">Age</label>
+            <input type="number" placeholder="Enter your age" min="9" max="200">
+        </div>
+        
+        <div class="date" style="margin: 10px;">
+            <label for="name">Birthdate</label>
+            <input type="date" placeholder="Enter your birthdate" min="2015-01-01">
+        </div>
+
+        <div class="list">
+            <ul style="margin: 5px;">
+                <li>
+                    <label for="green">Green</label>
+                    <input type="radio" id="green" name="color">
+                </li>
+                <li>
+                    <label for="red">Red</label>
+                    <input type="radio" id="red" name="color">
+                </li>
+                <li>
+                    <label for="blue">Blue</label>
+                    <input type="radio" id="blue" name="color">
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="textarea" style="margin: 10px;">
+            <label for="bio" style="margin-top: 20px;">Write some text</label><br>
+            <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+        </div>
+        
+        <div class="file" style="margin: 10px;">
+            <label for="file">Select a File to upload</label><br>
+            <input type="file" name="file" id="file">
+        </div>
+
+        <div class="url" style="margin: 10px;">
+            <label for="url">Enter an URL</label>
+            <input type="url" name="url" id="url">
+        </div>
+
+        <div class="color" style="margin: 10px;">
+            <label for="color">Pick a color</label>
+            <input type="color">
+        </div>
+
+        <div class="password" style="margin: 10px;">
+            <label for="password">Password</label>
+            <input type="password" required>
+        </div>
+
+        <input type="submit" style="margin: 10px; font-size: 2rem; padding: 10px 60px; background-color: blueviolet;">
+    </form>
+</body>
+</html>
